@@ -1,8 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import "./todo.css";
 
 function Todo({ todo, index, setTodo, ToDos }) {
-  // const [status, setStatus] = useState("pending");
 
   function deleteTodo() {
     return ToDos.filter((doList) => doList.id !== todo.id);
@@ -11,10 +10,10 @@ function Todo({ todo, index, setTodo, ToDos }) {
   function updateTodo() {
     return ToDos.map((doList2) => {
       if (doList2.id === todo.id) {
-        return { ...doList2, status: "Completed" };
+        return { ...doList2, status: "Completed" }
       }
       return doList2
-    });
+    })
   }
 
   return (
