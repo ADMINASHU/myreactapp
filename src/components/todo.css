@@ -1,0 +1,10 @@
+.todo{
+    display: grid;
+    /* grid-auto-columns: 150px; */
+    grid-template-columns: .3fr 4fr 1fr 1fr;
+    gap: 1rem;
+    color: white;
+    font-size: 1.5rem ;
+    max-width: 250px;
+    /* border: 1px solid white; */
+}
